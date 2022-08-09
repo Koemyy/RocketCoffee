@@ -1,0 +1,19 @@
+#header {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+}
+
+#header span {
+    color: var(--blue-300);
+}
+
+#header strong, p{
+    color: var(--grey-600);
+}
+
+

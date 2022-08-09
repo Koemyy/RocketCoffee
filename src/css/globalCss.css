@@ -1,0 +1,22 @@
+:root {
+    --brown-600: #A97155;
+    --brown-400: #BE8C63;
+    --brown-200: #E4D1B9;
+
+    --blue-300: #8FBDD3;
+
+    --grey-600: #181818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--grey-600);
+}
