@@ -1,34 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Header from './components/Header';
+import Product from './components/Product';
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    return (
+        <div>
+            <Header />
+            <div>Brunch</div>
+            <section>
+                <Product
+                    title = "Maçã do Amor"
+                    price = "8,00"
+                    description = "Deliciosa maçã do amor"
+                />
+                <Product
+                    title = "Torta Holandesa"
+                    price = "16,00"
+                    description = "Deliciosa torta holandesa"
+                />
+                <Product
+                    title = "Churros"
+                    price = "10,00"
+                    description = "Delicioso churros"
+                />
+            </section>
+            <div>Bebidas</div>
+            <section>
+                <Product
+                    title = "Suco de limão"
+                    price = "6,00"
+                    description = "Delicioso suco de limão"
+                />
+                <Product
+                    title = "Refrigerante Lata"
+                    price = "5,00"
+                    description = "Temos: Coca-cola, Guaraná e Fanta laranja"
+                />
+                <Product
+                    title = "Água mineral"
+                    price = "4,50"
+                    description = "Água mineral"
+                />
+            </section>
+        </div>
+    )
 }
 
 export default App
