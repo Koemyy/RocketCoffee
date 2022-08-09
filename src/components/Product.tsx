@@ -1,12 +1,19 @@
-function Section() {
+interface Content {
+    title: string,
+    price: string,
+    description: string,
+}
+
+function Product({title, price, description}: Content) {
     return (
         <div>
-            <header>Brunch</header>
-            <div>Maçã do Amor</div>
-            <div>R$12,00</div>
-            <div>Loremasdkspokfpofkapsokf</div>
+            <div>
+                <div>{title.toUpperCase()}</div>
+                <div>R${price.toUpperCase()}</div>
+            </div>
+            <div>{description}</div>
         </div>
     )
 }
 
-export default Section;
+export default Product;
