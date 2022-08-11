@@ -1,6 +1,5 @@
 import Product from './Product';
-import style from '../css/Section.module.css'
-import styles from "../css/Product.module.css";
+import styles from '../css/Section.module.css'
 
 interface PropsProduct {
     title: string,
