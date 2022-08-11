@@ -1,51 +1,25 @@
 import Header from './components/Header';
-import Product from './components/Product';
+import externalContents from './externalContents.json'
+import Section from "./components/Section";
 
 function App() {
-
     return (
         <div>
             <Header
-                title1 = "Rocket"
-                title2 = "Coffee"
-                subtitle = "Aberto todos os dias. 8h - 21h"
+                title1={externalContents.title1}
+                title2={externalContents.title2}
+                subtitle={externalContents.subtitle}
             />
-            <div>Brunch</div>
-            <section>
-                <Product
-                    title = "Maçã do Amor"
-                    price = "8,00"
-                    description = "Deliciosa maçã do amor"
-                />
-                <Product
-                    title = "Torta Holandesa"
-                    price = "16,00"
-                    description = "Deliciosa torta holandesa"
-                />
-                <Product
-                    title = "Churros"
-                    price = "10,00"
-                    description = "Delicioso churros"
-                />
-            </section>
-            <div>Bebidas</div>
-            <section>
-                <Product
-                    title = "Suco de limão"
-                    price = "6,00"
-                    description = "Delicioso suco de limão"
-                />
-                <Product
-                    title = "Refrigerante Lata"
-                    price = "5,00"
-                    description = "Temos: Coca-cola, Guaraná e Fanta laranja"
-                />
-                <Product
-                    title = "Água mineral"
-                    price = "4,50"
-                    description = "Água mineral"
-                />
-            </section>
+            <main>
+                {externalContents.contents.map(content => {
+                    return (
+                        <Section
+                            title={content.title}
+                            products={content.products}
+                        />
+                    )
+                })}
+            </main>
         </div>
     )
 }
