@@ -1,0 +1,16 @@
+#section {
+    max-width: 18.75rem;
+    margin: 0 auto;
+}
+
+#section h2 {
+    font-size: 1.125rem;
+    background-color: var(--blue-300);
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#section + #section {
+    margin-top: 1.5rem;
+}
