@@ -5,7 +5,11 @@ function App() {
 
     return (
         <div>
-            <Header />
+            <Header
+                title1 = "Rocket"
+                title2 = "Coffee"
+                subtitle = "Aberto todos os dias. 8h - 21h"
+            />
             <div>Brunch</div>
             <section>
                 <Product
