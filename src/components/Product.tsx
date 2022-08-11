@@ -1,3 +1,5 @@
+import styles from '../css/Product.module.css';
+
 interface Content {
     title: string,
     price: string,
@@ -6,12 +8,12 @@ interface Content {
 
 function Product({title, price, description}: Content) {
     return (
-        <div>
+        <div id={styles["product"]}>
             <div>
-                <div>{title.toUpperCase()}</div>
-                <div>R${price.toUpperCase()}</div>
+                <p>{title.toUpperCase()}</p>
+                <span>{description}</span>
             </div>
-            <div>{description}</div>
+            <p>R${price.toUpperCase()}</p>
         </div>
     )
 }
