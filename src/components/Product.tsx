@@ -13,7 +13,7 @@ function Product({title, price, description}: Content) {
                 <p>{title.toUpperCase()}</p>
                 <span>{description}</span>
             </div>
-            <p>R${price.toUpperCase()}</p>
+            <p>{price.toUpperCase()}</p>
         </div>
     )
 }
