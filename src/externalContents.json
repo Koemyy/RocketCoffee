@@ -1,0 +1,47 @@
+{
+  "title1": "rocket",
+  "title2": "coffee",
+  "subtitle": "Aberto todos os dias. 8h - 21h",
+  "contents": [
+    {
+      "title": "DOCES",
+      "products": [
+        {
+          "title": "WAFFLE DOCE",
+          "price": "R$15.50",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        },
+        {
+          "title": "CHURROS",
+          "price": "R$8.50",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        },
+        {
+          "title": "TORTA HOLANDESA",
+          "price": "R$10.00",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        }
+      ]
+    },
+    {
+      "title": "BEBIDAS",
+      "products": [
+        {
+          "title": "SUCO DE LIMÃO",
+          "price": "R$5.00",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        },
+        {
+          "title": "REFRIGERANTE",
+          "price": "R$4.50",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        },
+        {
+          "title": "ÁGUA MINERAL",
+          "price": "R$2.50",
+          "description": "Lorem ipsum dolor site amet, adipsicing elit, sed diam nonummy nibh."
+        }
+      ]
+    }
+  ]
+}
